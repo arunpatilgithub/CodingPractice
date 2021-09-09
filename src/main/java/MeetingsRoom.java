@@ -4,7 +4,6 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-@Slf4j
 public class MeetingsRoom {
 
     public static void main(String[] args) {

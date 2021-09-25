@@ -22,19 +22,9 @@ public class RobotBoundedInCircle {
         for (int i=0; i<instructions.length(); i++) {
 
             if (instructions.charAt(i) == 'L') {
-
-                if (currentDirection - 1 < 0) {
-                    currentDirection = 3;
-                } else {
-                    currentDirection = currentDirection - 1;
-                }
-
+                currentDirection = (currentDirection + 1) % 4;
             } else if (instructions.charAt(i) == 'R') {
-                if (currentDirection + 1 > directions.length - 1) {
-                    currentDirection = 0;
-                } else {
-                    currentDirection = currentDirection + 1;
-                }
+                currentDirection = (currentDirection + 3) % 4;
             } else {
 
                 if (currentDirection == 0) {

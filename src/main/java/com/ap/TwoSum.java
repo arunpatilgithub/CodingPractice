@@ -24,7 +24,7 @@ public class TwoSum {
             int sum = numbers[low] + numbers[high];
 
             if (sum == target) {
-                return new int[]{low, high};
+                return new int[]{low+1, high+1};
             }
 
             if (sum > target) {
